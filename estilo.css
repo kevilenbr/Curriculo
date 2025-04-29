@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    background-color: rgb(42, 165, 138);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline; /*center, flex end-end, stretch*/
+    flex-direction: row;
+    height: 800px;
+
+
+}
+
+.child {
+    border: 1px solid;
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+    background-color: white;
+
+
+}
+
+.item-maior {
+    flex-grow: 8;
+}
+
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
+    }
+
+    div {
+        font-weight: bold;
+    }
+}
